@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient( rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    /* padding: 40px; */
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    font-family: 'Carter One', cursive;
+}
+
+.links {
+    background: black;
+    list-style: none;
+    padding: 0;
+    box-shadow: inset 0 0 5px 10px rgb(0, 72, 254);
+    padding: 30px;
+    margin: 30px 0px;
+}
+.links li {
+    margin-right: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.links li a {
+    height: 55px;
+    width: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  margin-bottom: 0px;
+  background-color: #fffac3;
+  color: #333333;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  justify-content: center;
+box-shadow: 0 0 5px 2px rgb(255, 255, 255);
+/* border: 3px solid black; */
+  
+}
+
+.links li a:hover {
+    background-color: white;
+    transition: background-color .8s all;
+}
+
+.link li a {
+    text-align: center;
+    
+}
+
+.link li {
+    text-align: center;
+    
+}
+
+.links li a i {
+  font-size: 45px;
+}
+
+.links li a .big{
+    height: 35px;
+}
+
+.links li a img {
+    height: 50px;
+}
+
+
+
+.links li a i :hover{
+  cursor: pointer;
+}
+
+
+#youtube-link:hover{
+    color:rgb(250, 0, 0);
+    border-color: rgb(250, 0, 0);
+}
+
+#twitter-link:hover {
+    color: rgb(0, 150, 250);
+    border-color: rgb(0, 150, 250);
+}
+
+#instagram-link:hover {
+    color: rgb(248, 0, 161);
+    border-color:rgb(248, 0, 161);
+}
+
+#github-link:hover {
+    color: rgb(30, 201, 0);
+border-color:rgb(11, 77, 0);
+}
+
+#linkedin-link:hover {
+    color: rgb(35, 71, 249);
+    border-color: rgb(35, 71, 249);
+}
+
+#quora-link:hover{
+    color: rgb(186, 0, 0);
+    border-color: rgb(186, 0, 0);
+}
+
+.add:hover{
+    color: rgb(255, 0, 0);
+        border-color: rgb(21, 0, 255);
+}
+
+button {
+    padding: 10px;
+    text-align: center;
+    /* border: 2px solid black; */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+button:hover{
+    background-color: rgb(117, 117, 117);
+    color: white;
+    /* transition: background-color 3s all; */
+}
+
+button:active {
+    background-color: rgb(1, 193, 49);
+}
+
+p{
+    font-weight: 600;
+    color: white;
+}
+
+.links li a .vsmall{
+    height: 70px;
+}
+h2{
+    margin-top: 40px;
+    margin: auto;
+    width: 20vmax;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.moon {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    box-shadow: 0 0 150px 50px rgb(255, 255, 255);
+}
+
+.bmoon {
+    height: 150px;
+    width: 130px;
+    border-radius: 50%;
+    background-color: rgb(19, 30, 37);
+    position: absolute;
+    filter: blur(10px);
+    top: 0px;
+    right: 0px;
+    
+}
+

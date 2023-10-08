@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Atharv Darunkar</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<style>
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+
+    #copy-message {
+        display: none;
+        color: rgb(0, 255, 0);
+        font-weight: bold;
+        border: 2px solid white;
+        padding: 15px 20px;
+    }
+
+    @media (max-width: 768px) {
+        .flex {
+            justify-content: space-between;
+        }
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+    }
+
+    .profile{
+       height: auto;
+       /* width: 50%; */
+        /* margin: auto; */
+        /* border-radius: 50%; */
+        margin-bottom: 50px;
+    }
+
+    .profile img{
+        margin: auto;
+        height: 220px;
+        width: 220px;
+        border-radius: 50%;
+        margin-top: 20px;
+        padding: 10px;
+        border: 2px solid lightblue;
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="profile">
+            <img id="profile" src="images/profile.jpg" alt="">
+            <h1>Atharv Darunkar</h1>
+        </div>
+
+        <div id="copy-message">Link copied to clipboard!</div>
+
+        <h2>Socials</h2>
+        <div class="links flex">
+
+            <li>
+                <a href="https://www.linkedin.com/in/atharvdarunkar/" id="linkedin-link"><i class="fab fa-linkedin"></i></a>
+                <p>LinkedIn</p>
+                <button onclick="copyToClipboard('https://www.linkedin.com/in/atharvdarunkar/', 'linkedin-link')">Copy</button>
+            </li>
+
+            <li><a href="https://github.com/Datharv" id="github-link"><i class="fab fa-github"></i></a>
+                <p>Github</p>
+                <button onclick="copyToClipboard('https://github.com/Datharv', 'github-link')">Copy</button>
+            </li>
+            <li><a href="https://twitter.com/Datharv9" id="twitter-link"><i class="fab fa-twitter"></i></a>
+                <p>Twitter</p>
+                <button onclick="copyToClipboard('https://twitter.com/Datharv9', 'twitter-link')">Copy</button>
+            </li>
+
+            <li><a href="https://www.instagram.com/d_atharv9/" id="instagram-link"><i class="fab fa-instagram"></i></a>
+                <p>Instagram</p>
+                <button onclick="copyToClipboard('https://www.instagram.com/d_atharv9/', 'instagram-link')">Copy</button>
+            </li>
+
+            <li><a href="https://www.youtube.com/" id="youtube-link"><i class="fab fa-youtube"></i></a>
+                <p>Youtube</p>
+                <button onclick="copyToClipboard('https://www.instagram.com/', 'instagram-link')">Copy</button>
+            </li>
+
+            <li><a href="https://www.quora.com/profile/Atharv-Darunkar" id="quora-link"><i class="fab fa-quora"></i></a>
+                <p>Quora</p>
+                <button onclick="copyToClipboard('https://www.quora.com/profile/Atharv-Darunkar', 'instagram-link')">Copy</button>
+            </li>
+
+
+            <li><a href="#" class="add"><i class="fab fa-google"></i></a>
+                <p>Gmail-1</p>
+                <button onclick="copyToClipboard('atharvdarunkar111@gmail.com', 'instagram-link')">Copy</button>
+            </li>
+
+            <li><a href="#" class="add"><i class="fab fa-google"></i></a>
+                <p>Gmail-2</p>
+                <button onclick="copyToClipboard('darunkaratharv9@gmail.com', 'instagram-link')">Copy</button>
+            </li>
+
+            <li><a href="#" class="add"><i class="fab fa-google"></i></a>
+                <p>Gmail-3</p>
+                <button onclick="copyToClipboard('atharvdarunkar111@geca.ac.in', 'instagram-link')">Copy</button>
+            </li>
+
+
+        </div>
+
+        <h2>Coding Profiles</h2>
+        <div class="links flex">
+            <li>
+                <a href="https://auth.geeksforgeeks.org/user/_harish_99/practice" id="linkedin-link"><img class="big" src="images/gfg.png"
+                        alt=""></a>
+                        <p>GeeksforGeeks</p>
+                <button onclick="copyToClipboard('https://auth.geeksforgeeks.org/user/_harish_99/practice', 'linkedin-link')">Copy</button>
+
+            </li>
+
+            <li><a href="https://leetcode.com/atharvdarunkar111/" id="github-link"><img src="images/leetcode.webp" alt=""></a>
+                <p>Leetcode</p>
+                <button onclick="copyToClipboard('https://leetcode.com/atharvdarunkar111/', 'github-link')">Copy</button>
+            </li>
+            <li><a href="https://www.codingninjas.com/studio/profile/8d0ee6c1-c550-401a-a6eb-d02f831fc1a1" id="twitter-link"><img class="big" src="images/cn.png" alt=""></a>
+                <p>Coding Ninja</p>
+                <button onclick="copyToClipboard('https://www.codingninjas.com/studio/profile/8d0ee6c1-c550-401a-a6eb-d02f831fc1a1', 'twitter-link')">Copy</button>
+            </li>
+            <li><a href="https://www.codechef.com/users/code_atharv" id="youtube-link"><img src="images/cchef.png" alt=""></a>
+                <p>Codechef</p>
+                <button onclick="copyToClipboard('https://www.codechef.com/users/code_atharv', 'youtube-link')">Copy</button>
+            </li>
+            <li><a href="https://codeforces.com/" id="instagram-link"><img src="images/" alt=""></a>
+                <p>Codeforces</p>
+                <button onclick="copyToClipboard('https://codeforces.com/', 'instagram-link')">Copy</button>
+            </li>
+            <li><a href="https://www.hackerearth.com/@atharvdarunkar111" id="linkedin-link"><img src="images/he.png" alt=""></a>
+                <p>HackerEarth</p>
+                <button onclick="copyToClipboard('https://www.hackerearth.com/@atharvdarunkar111', 'linkedin-link')">Copy</button>
+            </li>
+
+            <li><a href="https://www.interviewbit.com/profile/atharv-darunkar" id="linkedin-link"><img class="vsmall" src="images/ib.png" alt=""></a>
+                <p>Interviewbit</p>
+                <button onclick="copyToClipboard('https://www.interviewbit.com/profile/atharv-darunkar', 'linkedin-link')">Copy</button>
+            </li>
+            <li><a href="https://www.hackerrank.com/atharvdarunkar12" id="linkedin-link" ><img src="images/hrank.png" class="vsmall" alt=""></a>
+                <p>HackerRank</p>
+                <button onclick="copyToClipboard('https://www.hackerrank.com/atharvdarunkar12', 'linkedin-link')">Copy</button>
+            </li>
+
+        </div>
+
+<h2>Resume & Projects</h2>
+        <div class="links flex">
+            <li><a href="https://drive.google.com/file/d/1b7zL6ZWwZtU0SCcHAwkQomPJvW8IZ5Im/view" id="github-link"><img src="images/resume.png" alt="Project1"></a>
+                <p>Resume</p>
+                <button onclick="copyToClipboard('https://drive.google.com/file/d/1b7zL6ZWwZtU0SCcHAwkQomPJvW8IZ5Im/view', 'github-link')">Copy</button>
+
+            </li>
+
+
+            <li><a href="https://github.com/Datharv/XploreGaming" id="twitter-link"><img src="images/projects.png" alt=""></a>
+                <p>XploreGaming</p>
+                <button onclick="copyToClipboard('https://github.com/Datharv/XploreGaming', 'twitter-link')">Copy</button>
+            </li>
+            <li><a href="https://github.com/Datharv/ShortGrid" id="youtube-link"><img src="images/projects.png" alt=""></a>
+                <p>ShortGrid</p>
+                <button onclick="copyToClipboard('https://github.com/Datharv/ShortGrid', 'youtube-link')">Copy</button>
+            </li>
+            <li><a href="https://videohub-liard.vercel.app/" id="instagram-link"><img src="images/projects.png" alt=""></a>
+                <p>StudyHub</p>
+                <button onclick="copyToClipboard('https://videohub-liard.vercel.app/', 'instagram-link')">Copy</button>
+            </li>
+        </div>
+    </div>
+
+    <div class="moon">
+        
+    </div>
+
+    <div class="bmoon">
+    
+    </div>
+
+
+    <script>
+        function copyToClipboard(link, elementId) {
+            var tempInput = document.createElement("input");
+            tempInput.style = "position: absolute; left: 0px; top: 0px";
+            tempInput.value = link;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            // Show the copy message
+            var copyMessage = document.getElementById("copy-message");
+            // copyMessage.style.display = "block";
+            copyMessage.style = "position: fixed; left: 20px; top: 20px; display:block;";
+
+            // Hide the copy message after 2 seconds
+            setTimeout(function () {
+                copyMessage.style.display = "none";
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>
+
+
+<!-- 
+    Resume
+    linkedin
+    portfolio
+    instagram
+    twitter
+    github
+    
+    geeksforgeeks
+    leetcode
+    codechef
+    codeforces
+    hackerrank
+    coding ninja
+
+    interviewbit
+
+    internshala
+    wellfound
+    
+    
+ -->
